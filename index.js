@@ -12,23 +12,22 @@ function calcularCluster() {
 
   let produto = valor1 * (valor2 + 1) * valor3 * (valor4 + 1) * 100;
   let cluster = "";
-  let fat = "";
+  let fat = 0;
 
   if (produto <= 20000000) {
     cluster = "1";
     fat = (20000000 / (valor2 + 1)) * valor3 * (valor4 + 1) * 100;
   } else if (produto > 20000000 && produto <= 40000000) {
     cluster = "2";
-    fat = (20000000 / (valor2 + 1)) * valor3 * (valor4 + 1) * 100;
+    fat = (40000000 / (valor2 + 1)) * valor3 * (valor4 + 1) * 100;
   } else if (produto > 40000000 && produto <= 75000000) {
     cluster = "3";
-    fat = (20000000 / (valor2 + 1)) * valor3 * (valor4 + 1) * 100;
+    fat = (75000000 / (valor2 + 1)) * valor3 * (valor4 + 1) * 100;
   } else if (produto > 75000000 && produto < 150000000) {
     cluster = "4";
-    fat = (20000000 / (valor2 + 1)) * valor3 * (valor4 + 1) * 100;
+    fat = (150000000 / (valor2 + 1)) * valor3 * (valor4 + 1) * 100;
   } else {
     cluster = "5";
-    fat = (20000000 / (valor2 + 1)) * valor3 * (valor4 + 1) * 100;
   }
 
   let formatador = new Intl.NumberFormat("pt-BR", {
