@@ -10,7 +10,7 @@ function calcularCluster() {
     return;
   }
 
-  let produto = valor1 * valor2 * valor3 * valor4 * 100;
+  let produto = valor1 * (valor2 + 1) * valor3 * (valor4 + 1) * 100;
   let cluster = "";
 
   if (produto <= 20000000) {
