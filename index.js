@@ -14,18 +14,18 @@ function calcularCluster() {
   let cluster = "";
   let fat = 0;
 
-  if (produto <= 20000000) {
+  if (produto <= 12000000) {
     cluster = "1";
-    fat = 20000000 / (100 * (valor2 + 1) * valor3 * (valor4 + 1));
-  } else if (produto > 20000000 && produto <= 40000000) {
+    fat = 12000000 / (100 * (valor2 + 1) * valor3 * (valor4 + 1));
+  } else if (produto > 12000000 && produto <= 24000000) {
     cluster = "2";
-    fat = 40000000 / (100 * (valor2 + 1) * valor3 * (valor4 + 1));
-  } else if (produto > 40000000 && produto <= 75000000) {
+    fat = 24000000 / (100 * (valor2 + 1) * valor3 * (valor4 + 1));
+  } else if (produto > 24000000 && produto <= 61000000) {
     cluster = "3";
-    fat = 75000000 / (100 * (valor2 + 1) * valor3 * (valor4 + 1));
-  } else if (produto > 75000000 && produto < 150000000) {
+    fat = 61000000 / (100 * (valor2 + 1) * valor3 * (valor4 + 1));
+  } else if (produto > 61000000 && produto < 130000000) {
     cluster = "4";
-    fat = 150000000 / (100 * (valor2 + 1) * valor3 * (valor4 + 1));
+    fat = 130000000 / (100 * (valor2 + 1) * valor3 * (valor4 + 1));
   } else {
     cluster = "5";
   }
